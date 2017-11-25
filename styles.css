@@ -6,8 +6,8 @@ p {
   font-family: Roboto;
   font-size: 18px;
   font-weight: lighter;
-  color:#454545;
-  padding: 30px 0px 30px 0px;
+  color:#808080;
+  padding: 30px 0px 10px 0px;
   line-height: 1.5em;
 }
 
@@ -15,12 +15,13 @@ p {
   font-weight: bold;
   color:black;
   padding: 0px 0px 0px 30px;
+  margin:10px 0px 10px 0px;
   border-left: solid 5px #000;
 }
 
 h1{
   font-family: Roboto;
-  font-size: 48px;
+  font-size: 56px;
   font-weight: bold;
   color:#1A1A1A;
   padding: 5px 0px 5px 0px;
@@ -38,7 +39,7 @@ h3{
   font-size: 28px;
   font-weight: bold;
   color:#000;
-  padding: 10px 0px 10px 0px;
+  padding: 0px;
 }
 
 h4{
@@ -47,6 +48,10 @@ h4{
   color:black;
   text-transform: uppercase;
   font-family: BlinkMacSystemFont;
+}
+
+.space-up{
+  height:70px;
 }
 
 h4 span{
@@ -62,7 +67,7 @@ h6{
   font-size: 14px;
   font-weight: lighter;
   padding: 10px 0px 10px 0px;
-  line-height: 1.5em;
+  line-height: 1.2em;
 }
 
 p::selection,h1::selection, h2::selection,h3::selection,h4 span::selection,h5::selection,h6::selection{
@@ -70,11 +75,27 @@ p::selection,h1::selection, h2::selection,h3::selection,h4 span::selection,h5::s
   color: white;
 }
 
+
+
 .navi-bar {
   display: block;
   z-index: 2;
-  margin-top: 15px;
-  height: 50px
+  width: 100%;
+  top:0px;
+  position: fixed;
+  transition:all ease-in-out 0.4s;
+  padding: 15px 100px 15px 100px;
+  background-color: white;
+  color: yellow;
+}
+
+.navi-white{
+  color: white;
+}
+
+.fixedAtTop{
+  -webkit-transform: translateY(-70px);
+  transform: translateY(-70px);
 }
 
 .navi-bar img{
@@ -90,12 +111,17 @@ p::selection,h1::selection, h2::selection,h3::selection,h4 span::selection,h5::s
 }
 
 .navi-item {
-  margin-left: 40px;
+  margin-left: 50px;
   text-align: right;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
+  font-family: Source Sans Pro;
   text-decoration: none;
-  color: #000;
+  color:black;
+}
+
+.navi-item:hover{
+  text-decoration: none;
 }
 
 .navi-item-selected{
@@ -117,26 +143,60 @@ p::selection,h1::selection, h2::selection,h3::selection,h4 span::selection,h5::s
 
 .container-fluid img{
   width: 100%;
-  z-index: 0;
+  z-index: 1;
 }
+
+.header{
+  height: 100%;
+  background-image: url("https://images.contentful.com/py55p8b6ms79/56MOgx8e1asCgOeweCq4QW/9119560c2c1616ba3f000036700eb88a/work-ibm_hero.png?fit=crop&h=2160&w=3456");
+  background-position:center;
+}
+
+
 
 .col-md-2{
   text-align: right;
   padding:30px 0px 30px 0px;
 }
 
-.col-md-8{
+.col-md-7{
   padding:30px 80px 30px 80px;
+}
+
+.article-title{
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  box-shadow:0px -10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .in-page-navi{
   position: fixed;
   text-align: right;
+  top:60px;
+  z-index: 0;
 
 }
 
 .in-page-navi h6{
   padding: 3px 0px 3px 0px;
+}
+
+.anchor{
+  color:#B3B3B3;
+  font-size: 14px;
+  font-weight: lighter;
+  display: block;
+  margin:10px 0px 10px 0px;
+}
+
+.anchor-active{
+  font-weight: bold;
+  color:black;
+  padding: 0px 0px 0px 0px;
+  border-left: solid 5px #000;
 }
 
 .in-line-image{

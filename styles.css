@@ -164,8 +164,9 @@ p::selection,h1::selection, h2::selection,h3::selection,h4 span::selection,h5::s
 
 .header{
   height: 100%;
-  background-image: url("https://images.contentful.com/py55p8b6ms79/56MOgx8e1asCgOeweCq4QW/9119560c2c1616ba3f000036700eb88a/work-ibm_hero.png?fit=crop&h=2160&w=3456");
+  background-image: url("assets/bg-img@2x-8.png");
   background-position:center;
+  background-size: cover;
 }
 
 .index-header{

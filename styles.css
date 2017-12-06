@@ -200,16 +200,13 @@ p::selection,h1::selection, h2::selection,h3::selection,h4 span::selection,h5::s
 }
 
 .button{
-  display: none;
   margin-top: 50px;
-  background-color: white;
-  border-color: white;
+  border: 2px solid black;
   border-radius: 30px;
   padding: 10px 36px 10px 32px;
   font-weight: 700;
   font-size: 18px;
   font-family: source sans pro;
-  box-shadow: 0px 0px 15px #d3d3d3;
   color:#1a1a1a;
   transition-duration: 0.2s;
 }
@@ -221,7 +218,8 @@ p::selection,h1::selection, h2::selection,h3::selection,h4 span::selection,h5::s
 }
 
 .button:hover{
-  box-shadow: 0px 0px 30px #d3d3d3;
+  background-color: black;
+  color: #fff;
 
 }
 
@@ -251,13 +249,23 @@ p::selection,h1::selection, h2::selection,h3::selection,h4 span::selection,h5::s
 }
 
 .preview-title{
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .preview-block{
-  padding: 10px 0px 80px 0px;
+  padding: 250px 120px 80px 120px;
 }
 
+@media only screen and (max-width: 800px){
+  .preview-block{
+    padding: 80px 60px 80px 60px;
+  }
+}
+
+
+.preview-time{
+  font-size: 18px;
+}
 
 .article-title{
   position: absolute;
@@ -311,13 +319,12 @@ p::selection,h1::selection, h2::selection,h3::selection,h4 span::selection,h5::s
 
 .footer{
   background-color: #1a1a1a;
-  height:200px;
+  height:250px;
   width: 100%;
-  margin-top: 100px;
 }
 
 .footer h5{
-  padding-top: 60px;
+  padding-top: 80px;
   color: #cccccc;
   font-size: 22px;
   font-weight:bold;
@@ -330,6 +337,26 @@ p::selection,h1::selection, h2::selection,h3::selection,h4 span::selection,h5::s
   font-weight: 200;
   opacity: 0.3;
   margin-left: 20px;
+}
+
+.bg-grey, .bg-white{
+  background-color: #f7f7f7;
+  padding:80px 0px 80px 0px;
+  width: 100%;
+}
+
+.bg-white{
+  background-color: #fff;
+}
+
+
+.full-width{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.full-width img{
+  box-shadow: 0px 0px 15px #d3d3d3;
 }
 
 /*animation*/

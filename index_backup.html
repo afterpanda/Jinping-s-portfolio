@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Jinping's Portfolio</title>
+  <meta name="description" content="About Me">
+  <meta name="author" content="SitePoint">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="path/to/theater.min.js"></script>
+  <script src="main.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+        <div class="navi-bar">
+          <div class="container-fluid">
+            <div class="row justify-content-md-center">
+              <div class="col-12 col-md-10">
+              <a href="index.html"><img src="assets/logo.svg" alt="logo" id="logo"></a>
+              <div class="navi-menu">
+                <a class="navi-item" href="index.html">WORK</a>
+                <a class="navi-item" href="about.html">ABOUT</a>
+                <a class="navi-item" href="#">RESUME</a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <div class="index-header">
+           <div class="container">
+             <div class="row justify-content-md-center">
+               <div class="col-12 col-md-12">
+                 <div id="greeting"></div>
+                 <h3>I am <span class="bold">Jinping Liu</span>, a MHCI student at <span class="bold">Carnegie Mellon University</span>,<br>and a <span class="bold">UX designer</span> with 3 years' experience working at <span class="bold">HappyOrNot</span>, <span class="bold">Tencent</span> and <span class="bold">Nokia Research Center</span>.  </h3>
+                 <button type="button" name="button" class="button"><img src="assets/download.svg" alt="download-icon">RESUME</button>
+                 <img src="assets/button.svg" alt="">
+                </div>
+              </div>
+         </div>
+         </div>
+
+         <div class="container">
+           <div class="row justify-content-md-center">
+             <div class="col-12 col-md-6">
+               <div class="preview-block">
+                 <a href="article_01.html"><img src="assets/preview1@2x-8.png" alt="HappyOrNot Data Platform Redesign" class="preview-img"></a>
+               <h2 class="preview-subtitle">Bringing Customer Experience Management to The Next Level</h2>
+               <h3 class="preview-title">HappyOrNot Data Platform Redesign</h3>
+               </div>
+             </div>
+             <div class="col-12 col-md-6">
+               <div class="preview-block">
+               <a href="article_01.html"><img src="assets/preview1@2x-8.png" alt="HappyOrNot Data Platform Redesign" class="preview-img"></a>
+               <h2 class="preview-subtitle">Bringing Customer Experience Management to The Next Level</h2>
+               <h3 class="preview-title">HappyOrNot Data Platform Redesign</h3>
+               </div>
+             </div>
+           </div>
+
+           <div class="row justify-content-md-center">
+             <div class="col-12 col-md-6">
+               <div class="preview-block">
+                 <a href="article_01.html"><img src="assets/preview1@2x-8.png" alt="HappyOrNot Data Platform Redesign" class="preview-img"></a>
+               <h2 class="preview-subtitle">Bringing Customer Experience Management to The Next Level</h2>
+               <h3 class="preview-title">HappyOrNot Data Platform Redesign</h3>
+               </div>
+             </div>
+             <div class="col-12 col-md-6">
+               <div class="preview-block">
+                 <a href="article_01.html"><img src="assets/preview1@2x-8.png" alt="HappyOrNot Data Platform Redesign" class="preview-img"></a>
+               <h2 class="preview-subtitle">Bringing Customer Experience Management to The Next Level</h2>
+               <h3 class="preview-title">HappyOrNot Data Platform Redesign</h3>
+               </div>
+             </div>
+           </div>
+
+          </div>
+
+          <section class="footer">
+            <div class="container">
+                <h5>Thanks for visiting.</h5>
+                <h2>© Jinping Liu. Designed and coded by Jinping Liu.</h2>
+            </div>
+          </section>
+
+
+
+         <script src="theater.min.js"></script>
+         <script>
+         var theater = theaterJS()
+
+         theater
+           .on('type:start, erase:start', function () {
+             theater.getCurrentActor().$element.classList.add('actor__content--typing')
+           })
+           .on('type:end, erase:end', function () {
+             theater.getCurrentActor().$element.classList.remove('actor__content--typing')
+           })
+
+         theater
+           .addActor('greeting')
+
+         theater
+           .addScene('greeting:He', 800,'llo!',800)
+           .addScene('greeting:M', 400,'oi!',800)
+           .addScene('greeting:你', 400, '好', 400, '!', 800)
+           .addScene(theater.replay)
+         </script>
+
+
+</body>
+</html>

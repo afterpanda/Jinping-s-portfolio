@@ -208,6 +208,7 @@ p::selection,h1::selection, h2::selection,h3::selection,h4 span::selection,h5::s
   font-size: 18px;
   font-family: source sans pro;
   color:#1a1a1a;
+  background-color: white;
   transition-duration: 0.2s;
 }
 

@@ -278,6 +278,23 @@ p::selection,h1::selection, h2::selection,h3::selection,h4 span::selection,h5::s
   }
 }
 
+@media only screen and (max-width: 420px){
+  .preview-block{
+    padding: 50px 20px 30px 20px
+  }
+
+  #greeting{
+    margin-top: 150px;
+    font-size: 80px;
+  }
+
+  .index-header h3{
+    font-size: 14px;
+  }
+
+
+}
+
 
 .preview-time{
   font-size: 18px;
